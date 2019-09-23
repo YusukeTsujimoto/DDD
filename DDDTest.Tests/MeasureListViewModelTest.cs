@@ -27,7 +27,8 @@ namespace DDDTest.Tests
             measureMock.Setup(x => x.GetData()).Returns(measures);
             var viewModel = new MeasureListViewModel(measureMock.Object);
             Assert.AreEqual(2, viewModel.Measures.Count);
-            //Assert.AreEqual("2017/01/01 13:00:00", viewModel.Measures[0].MeasureDate);
+            Assert.AreEqual("2017/01/01 13:00:00", viewModel.Measures[0].MeasureDate);
+            Assert.AreEqual("1.23m/s", viewModel.Measures[0].MeasureValue);
         }
     }
 }

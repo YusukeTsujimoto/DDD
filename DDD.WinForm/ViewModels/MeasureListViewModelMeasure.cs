@@ -8,5 +8,7 @@ namespace DDD.WinForm.ViewModels
 {
     public class MeasureListViewModelMeasure
     {
+        public string MeasureDate { get; set; }
+        public string MeasureValue { get; set; }
     }
 }
