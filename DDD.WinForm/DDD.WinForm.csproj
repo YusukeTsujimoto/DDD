@@ -52,6 +52,7 @@
     <Compile Include="ViewModels\LatestViewModel.cs" />
     <Compile Include="ViewModels\MeasureListViewModel.cs" />
     <Compile Include="ViewModels\MeasureListViewModelMeasure.cs" />
+    <Compile Include="ViewModels\MeasureSaveViewModel.cs" />
     <Compile Include="ViewModels\MeasureViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
     <Compile Include="Views\BaseForm.cs">
@@ -65,6 +66,12 @@
     </Compile>
     <Compile Include="Views\LatestView.Designer.cs">
       <DependentUpon>LatestView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MeasureListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MeasureListView.Designer.cs">
+      <DependentUpon>MeasureListView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\MeasureView.cs">
       <SubType>Form</SubType>
@@ -89,6 +96,9 @@
     </Compile>
     <EmbeddedResource Include="Views\LatestView.resx">
       <DependentUpon>LatestView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MeasureListView.resx">
+      <DependentUpon>MeasureListView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\MeasureView.resx">
       <DependentUpon>MeasureView.cs</DependentUpon>

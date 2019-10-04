@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DDD.Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,14 @@ namespace DDD.WinForm.ViewModels
 {
     public class MeasureListViewModelMeasure
     {
-        public string MeasureDate { get; set; }
-        public string MeasureValue { get; set; }
+        private MeasureEntity _entity;
+
+        public MeasureListViewModelMeasure(MeasureEntity entity)
+        {
+            _entity = entity ?? throw new ArgumentNullException(nameof(entity));
+        }
+
+        public string MeasureDate => _entity.MeasureDate.DisplayValue;
+        public string MeasureValue => _entity.MeasureValue.DisplayValue;
     }
 }

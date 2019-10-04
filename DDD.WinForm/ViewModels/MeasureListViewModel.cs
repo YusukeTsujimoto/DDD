@@ -1,4 +1,5 @@
 ﻿using DDD.Domain.Repositories;
+using DDD.Infrastructure;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,13 +13,17 @@ namespace DDD.WinForm.ViewModels
     {
         private readonly IMeasureRepository _measureRepository;
 
+        public MeasureListViewModel() : this(Factories.CreateMeasureRepository())
+        {
+        }
+
         public MeasureListViewModel(IMeasureRepository measureRepository)
         {
             _measureRepository = measureRepository ?? throw new ArgumentNullException(nameof(measureRepository));
 
             foreach (var entity in _measureRepository.GetData())
             {
-                Measures.Add(new MeasureListViewModelMeasure());
+                Measures.Add(new MeasureListViewModelMeasure(entity));
             }
         }
 
