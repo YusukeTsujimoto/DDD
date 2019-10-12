@@ -1,6 +1,6 @@
-﻿using DDD.Domain.ValueObjects;
+﻿using Ddd.Domain.ValueObjects;
 
-namespace DDD.Domain.Repositories
+namespace Ddd.Domain.Repositories
 {
     public interface ISensorRepository
     {

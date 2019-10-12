@@ -1,4 +1,4 @@
-﻿namespace DDD.WinForm.Views
+﻿namespace Ddd.WinForm.Views
 {
     partial class LatestView
     {

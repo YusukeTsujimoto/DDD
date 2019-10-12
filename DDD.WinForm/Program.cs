@@ -1,8 +1,8 @@
-﻿using DDD.WinForm.Views;
+﻿using Ddd.WinForm.Views;
 using System;
 using System.Windows.Forms;
 
-namespace DDD.WinForm
+namespace Ddd.WinForm
 {
     static class Program
     {

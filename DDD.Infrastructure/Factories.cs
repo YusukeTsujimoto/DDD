@@ -1,7 +1,7 @@
-﻿using DDD.Domain.Repositories;
-using DDD.Infrastructure.Fake;
+﻿using Ddd.Domain.Repositories;
+using Ddd.Infrastructure.Fake;
 
-namespace DDD.Infrastructure
+namespace Ddd.Infrastructure
 {
     public static class Factories
     {

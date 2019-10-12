@@ -1,4 +1,4 @@
-﻿using DDD.WinForm.ViewModels;
+﻿using Ddd.WinForm.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DDD.WinForm.Views
+namespace Ddd.WinForm.Views
 {
     public partial class LatestView : BaseForm
     {

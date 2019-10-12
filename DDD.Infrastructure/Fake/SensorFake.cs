@@ -1,8 +1,8 @@
-﻿using DDD.Domain.Repositories;
-using DDD.Domain.ValueObjects;
+﻿using Ddd.Domain.Repositories;
+using Ddd.Domain.ValueObjects;
 using System;
 
-namespace DDD.Infrastructure.Fake
+namespace Ddd.Infrastructure.Fake
 {
     internal sealed class SensorFake : ISensorRepository
     {

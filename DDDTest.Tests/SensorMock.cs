@@ -1,5 +1,5 @@
-﻿using DDD.Domain.Repositories;
-using DDD.Domain.ValueObjects;
+﻿using Ddd.Domain.Repositories;
+using Ddd.Domain.ValueObjects;
 
 namespace DDDTest.Tests
 {

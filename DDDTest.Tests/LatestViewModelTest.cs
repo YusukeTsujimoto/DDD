@@ -1,6 +1,6 @@
-﻿using DDD.Domain.Entities;
-using DDD.Domain.Repositories;
-using DDD.WinForm.ViewModels;
+﻿using Ddd.Domain.Entities;
+using Ddd.Domain.Repositories;
+using Ddd.WinForm.ViewModels;
 using Moq;
 using NUnit.Framework;
 using System;

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DDD.WinForm.Properties
+namespace Ddd.WinForm.Properties
 {
 
 

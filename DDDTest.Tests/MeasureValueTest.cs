@@ -1,4 +1,4 @@
-﻿using DDD.Domain.ValueObjects;
+﻿using Ddd.Domain.ValueObjects;
 using NUnit.Framework;
 
 namespace DDDTest.Tests

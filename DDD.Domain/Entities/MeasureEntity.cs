@@ -1,9 +1,9 @@
-﻿using DDD.Domain.ValueObjects;
+﻿using Ddd.Domain.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DDD.Domain.Entities
+namespace Ddd.Domain.Entities
 {
     public class MeasureEntity
     {

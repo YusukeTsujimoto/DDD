@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DDD.Domain.ValueObjects
+namespace Ddd.Domain.ValueObjects
 {
     public sealed class MeasureDate : ValueObject<MeasureDate>
     {

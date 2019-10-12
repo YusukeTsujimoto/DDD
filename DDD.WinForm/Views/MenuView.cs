@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DDD.WinForm.Views
+namespace Ddd.WinForm.Views
 {
     public partial class MenuView : BaseForm
     {
@@ -28,6 +28,14 @@ namespace DDD.WinForm.Views
         private void ListButton_Click(object sender, EventArgs e)
         {
             using (var f = new MeasureListView())
+            {
+                f.ShowDialog();
+            }
+        }
+
+        private void SaveButton_Click(object sender, EventArgs e)
+        {
+            using (var f = new MeasureSaveView())
             {
                 f.ShowDialog();
             }

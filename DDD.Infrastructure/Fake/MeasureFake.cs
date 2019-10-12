@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using DDD.Domain.Entities;
-using DDD.Domain.Repositories;
+using Ddd.Domain.Entities;
+using Ddd.Domain.Repositories;
 
-namespace DDD.Infrastructure.Fake
+namespace Ddd.Infrastructure.Fake
 {
     internal sealed class MeasureFake : IMeasureRepository
     {
@@ -25,6 +25,17 @@ namespace DDD.Infrastructure.Fake
         public MeasureEntity GetLatest()
         {
             return new MeasureEntity("guidA", "2017/01/01 13:00:00".ToDate(), 1.23456f);
+        }
+
+        public void Save(MeasureEntity entity)
+        {
+            var index = _entities.FindIndex(x => x.MeasureId == entity.MeasureId);
+            if (index >= 0)
+            {
+                _entities[index] = entity;
+                return;
+            }
+            _entities.Add(entity);
         }
     }
 }

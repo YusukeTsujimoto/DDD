@@ -1,9 +1,11 @@
 ﻿using System;
 
-namespace DDD.Domain.ValueObjects
+namespace Ddd.Domain.ValueObjects
 {
     public sealed class MeasureValue : ValueObject<MeasureValue>
     {
+        public static readonly string UnitName = "m/s";
+
         public MeasureValue(float value)
         {
             Value = value;
@@ -11,7 +13,7 @@ namespace DDD.Domain.ValueObjects
 
         public float Value { get; }
 
-        public string DisplayValue => Math.Round(Value, 2) + "m/s";
+        public string DisplayValue => Math.Round(Value, 2) + UnitName;
 
         protected override bool EqualsCore(MeasureValue other)
         {

@@ -1,5 +1,5 @@
-﻿using DDD.Domain.Repositories;
-using DDD.Infrastructure;
+﻿using Ddd.Domain.Repositories;
+using Ddd.Infrastructure;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DDD.WinForm.ViewModels
+namespace Ddd.WinForm.ViewModels
 {
     public class MeasureListViewModel : ViewModelBase
     {

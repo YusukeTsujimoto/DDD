@@ -1,4 +1,4 @@
-﻿namespace DDD.Domain.ValueObjects
+﻿namespace Ddd.Domain.ValueObjects
 {
     public abstract class ValueObject<T> where T : ValueObject<T>
     {

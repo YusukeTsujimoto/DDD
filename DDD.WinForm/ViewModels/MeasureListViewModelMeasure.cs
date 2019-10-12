@@ -1,11 +1,11 @@
-﻿using DDD.Domain.Entities;
+﻿using Ddd.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DDD.WinForm.ViewModels
+namespace Ddd.WinForm.ViewModels
 {
     public class MeasureListViewModelMeasure
     {

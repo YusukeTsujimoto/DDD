@@ -1,4 +1,4 @@
-﻿namespace DDD.WinForm.Views
+﻿namespace Ddd.WinForm.Views
 {
     partial class MenuView
     {
@@ -31,6 +31,7 @@
             this.MeasureButton = new System.Windows.Forms.Button();
             this.LatestButton = new System.Windows.Forms.Button();
             this.ListButton = new System.Windows.Forms.Button();
+            this.SaveButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // MeasureButton
@@ -68,11 +69,23 @@
             this.ListButton.UseVisualStyleBackColor = true;
             this.ListButton.Click += new System.EventHandler(this.ListButton_Click);
             // 
+            // SaveButton
+            // 
+            this.SaveButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SaveButton.Location = new System.Drawing.Point(0, 113);
+            this.SaveButton.Name = "SaveButton";
+            this.SaveButton.Size = new System.Drawing.Size(800, 39);
+            this.SaveButton.TabIndex = 3;
+            this.SaveButton.Text = "Save";
+            this.SaveButton.UseVisualStyleBackColor = true;
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
+            // 
             // MenuView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.ListButton);
             this.Controls.Add(this.LatestButton);
             this.Controls.Add(this.MeasureButton);
@@ -87,5 +100,6 @@
         private System.Windows.Forms.Button MeasureButton;
         private System.Windows.Forms.Button LatestButton;
         private System.Windows.Forms.Button ListButton;
+        private System.Windows.Forms.Button SaveButton;
     }
 }

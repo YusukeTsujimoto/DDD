@@ -1,8 +1,8 @@
-﻿using DDD.Domain.Repositories;
-using DDD.Infrastructure;
+﻿using Ddd.Domain.Repositories;
+using Ddd.Infrastructure;
 using System;
 
-namespace DDD.WinForm.ViewModels
+namespace Ddd.WinForm.ViewModels
 {
     public class LatestViewModel : ViewModelBase
     {
